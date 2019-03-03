@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pudl</title>
+<link rel="stylesheet" type="text/css" href="animate.css"/>
+<link rel="shortcut icon" type="image/jpg" href="Pudl.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.button {
+  background-color: #DC143C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+header {
+  font-family: sans-serif;
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: left;
+  font-size: 10px;
+  color: white;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -80%;
+  left: 50%;
+  margin-left: -80px;
+}
+/* Popup arrow */
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+/* animation*/
+@-webkit-keyframes fadeIn {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0.5;}
+  to {opacity:1 ;}
+}
+
+#signin {
+  background-color: #6D214F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  float: right;
+  }
+#signin:hover {
+  background-color: #27ae60;
+  }
+
+#signup {
+  background-color: #6D214F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  font-family: sans-serif;
+}
+#signup:hover {
+  background-color: #27ae60;
+}
+.typeform-widget {
+  width: 50%;
+  height: 500px;
+}
+
+article {
+  background: rgb(75,12,50);
+  background: linear-gradient(0deg, rgba(75,12,50,1) 1%, rgba(78,17,53,1) 46%, rgba(167,150,150,1) 100%);
+  margin-top: 30px;
+  font-family: sans-serif;
+  border: 3px solid black;
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 700px;
+
+}
+.b76 article:hover {
+  background-color: rgba(36, 37, 42, 1)
+}
+nav{
+  margin-top: 30px;
+  border: 3px solid black;
+  float: left;
+  width: 70%;
+  height: 700px;
+  background: #ccc;
+  color: white;
+  padding: 20px;
+  background-image: url("Text placeholder.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer{
+  background-color: #f1f1f1;
+  border: 1px solid black;
+
+}
+#hello:hover {
+  background-color: rgba(36, 37, 42, 1)
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.b76:hover{
+  color: rgb(38, 166, 91)
+}
+
+</style>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="folder/index.css"/>
+<link rel="shortcut icon" type="image/png" href="/parking-sign.png"/>
+<meta charset="utf-8">
+
+<title>Pudl: Get Help Anywhere</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+
+<header style="margin: 0; font-size: 10px; !important; position:relative;">
+    <div class="row">
+    <div class="col-md-7">
+      <img style="float left;" src="Pudl.png" width = "90" height="80" display="inline-block">
+      <a href="index.html"></a>
+      </img>
+      <h6 style="display: inline-block; padding-left: 15px;"><font style="color: black; font-family: 'Merriweather', serif;">Receive Help Anywhere</font></h2>
+
+
+    </div>
+
+      <div style="position:absolute; left: 50%; transform: translate(atom://teletype/portal/858be2f7-2758-458e-b4e3-56ccefd865e6)">
+      <button class="popup button" onclick="myFunction()">I HAVE AN URGENT EMERGENCY
+        <span class="popuptext" id="myPopup"> <a href="tel:+911">Call 911</a></span></button>
+      </div>
+    </div>
+
+
+
+</header>
+
+<nav><h1 style="text-align: center">Forum</h1>
+  <a id="nabblelink" href="http://help.112032.n8.nabble.com/">Help  </a>
+<script src="http://help.112032.n8.nabble.com/embed/f1"></script>
+</nav>
+
+<article id="hello" class="b76">
+  <h1 class="b76" style="text-align: center; font-family: sans-serif; color: white;">Our Mission</h1>
+  <div class="b76" style="font-size: 20px; text-align: justify; color: white;"><br>
+  <par>Due to climate change and the ever-increasing home prices, there is always a need for supplies such as food, water, energy, and medicine. Homelessness and the number of fires in California are rising. Many people cannot afford basic needs and for that reason, we created Pudl, a way to request supplies quickly and efficiently; it is always there to help when you most need help. We soon hope to partner with other larger charities and companies who deliver their products as fast as possible. We value our customers above all and treat everyone as though they are our family.</par>
+</div>
+</article>
+
+<footer>
+<h1 style="text-align: center">FOR MORE SUPPPORT CONTACT DISASTER HOTLINE:</h1>
+<h1 style="text-align: center">1-800-985-5990</h1>
+
+</footer>
+
+<!--This code will be the geolocaiton -->
+<br>
+<br>
+<!-- <p>Click the button to get your coordinates.</p>
+<button onclick="getLocation()">Try It</button> -->
+
+<p id="demo"></p>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+
+<center><div class="typeform-widget" data-url="https://pudl.typeform.com/to/pO33Dm"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 3px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=pO33Dm&utm_source=typeform.com-13506917-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></center>
+</div>
+</body>
+</html>
